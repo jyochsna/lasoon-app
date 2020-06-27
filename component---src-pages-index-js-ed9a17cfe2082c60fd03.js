@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{RXBc:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return c}));var o=t("q1tI"),r=t.n(o);function c(){return r.a.createElement("div",{style:{color:"purple",fontSize:"72px"}},"Lasoon Restro!")}}}]);
+//# sourceMappingURL=component---src-pages-index-js-ed9a17cfe2082c60fd03.js.map
