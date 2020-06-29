@@ -1,28 +1,44 @@
-import React from "react"
-
-import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container'
-import Nav from 'react-bootstrap/Navbar'
+import React from "react";
+import "./style.css";
+import LasooToogleButton from "../SideDrawer/DrawerToggleButton"
 
 
 
-export default function LasoonNav() {
-    return <div >
-        <div class="container">
-   <Navbar fixed="top">
-       <Navbar.Brand><img src="../images/logo.jpg"/>
-       </Navbar.Brand>
-       <div className="navbar">
-           <li className="nav-item">
-               <span className="text-white"><h3>About</h3></span>
-           </li>
-           <li className="nav-item">
-               <span className="text-white"><h3>Menu</h3></span>
-           </li>
-       </div>
-   </Navbar>
-   </div>
-    </div>
+const LasoonNav = props =>(
   
+        
+      <header className="toolbar">
+          <nav className="toolbar_navigation">
+              <div>
+               <LasooToogleButton click={props.drawerClickHandler}/>
+              </div>
+              <div className="toolbar_logo"><a href="/"><img src="../images/logo.jpg" /></a></div>
+              <div className="spacer" />
+         
+              <div className="toolbar_navigation-items"> 
+                  <ul>
+                      <li><a href="/">About us
+                      </a></li>
+                      <li><a href="/">Menu
+                      </a></li>
+                      <li><a href="/">Gallery
+                      </a></li>
+                      <li><a href="/">Reservation
+                      </a></li>
+                      <li><a href="/">Location
+                      </a></li>
+                      <li><a href="/">FB
+                      </a></li>
+                      <li><a href="/">IG
+                      </a></li>
+                  </ul>
+              </div>
        
-  }
+          </nav>
+      </header>
+ 
+
+    );
+  
+
+    export default LasoonNav;
